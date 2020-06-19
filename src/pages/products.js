@@ -21,7 +21,7 @@ function products({ data }) {
                 <article key={product.id}>
                   <Image fluid={product.image.fluid} alt={product.title} />
                   <h3>{product.title} <span>${product.price}</span></h3>
-                  <Link to={`products/${product.slug}`}>More details</Link>
+                  <Link to={`/products/${product.slug}`}>More details</Link>
                 </article>
               )
             })
